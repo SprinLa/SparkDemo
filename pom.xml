@@ -29,45 +29,46 @@
             <encoding>UTF-8</encoding>
         </configuration>
     </plugin>
-        <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>exec-maven-plugin</artifactId>
-            <version>1.1.1</version>
-            <executions>
-                <execution>
-                    <phase>test</phase>
-                    <goals>
-                        <goal>java</goal>
-                    </goals>
-                    <configuration>
-                        <mainClass>SparkDemo</mainClass>
-                    </configuration>
-                </execution>
-            </executions>
-        </plugin>
-        <plugin>
-            <artifactId>maven-assembly-plugin</artifactId>
-            <configuration>
-                <appendAssemblyId>false</appendAssemblyId>
-                <descriptorRefs>
-                    <descriptorRef>jar-with-dependencies</descriptorRef>
-                </descriptorRefs>
-                <archive>
-                    <manifest>
-                        <mainClass>SparkDemo</mainClass>
-                    </manifest>
-                </archive>
-            </configuration>
-            <executions><!--ceshi -->
-                <execution>
-                    <id>make-assembly</id>
-                    <phase>package</phase>
-                    <goals>
-                        <goal>assembly</goal>
-                    </goals>
-                </execution>
-            </executions>
-        </plugin>
+        <!--<plugin>-->
+            <!--<groupId>org.codehaus.mojo</groupId>-->
+            <!--<artifactId>exec-maven-plugin</artifactId>-->
+            <!--<version>1.1.1</version>-->
+            <!--<executions>-->
+                <!--<execution>-->
+                    <!--<phase>test</phase>-->
+                    <!--<goals>-->
+                        <!--<goal>java</goal>-->
+                    <!--</goals>-->
+                    <!--<configuration>-->
+                        <!--<mainClass>SparkDemo</mainClass>-->
+                    <!--</configuration>-->
+                <!--</execution>-->
+            <!--</executions>-->
+        <!--</plugin>-->
+        <!--<plugin>-->
+            <!--&lt;!&ndash;jar中添加第三方依赖包 &ndash;&gt;-->
+            <!--<artifactId>maven-assembly-plugin</artifactId>-->
+            <!--<configuration>-->
+                <!--<appendAssemblyId>false</appendAssemblyId>-->
+                <!--<descriptorRefs>-->
+                    <!--<descriptorRef>jar-with-dependencies</descriptorRef>-->
+                <!--</descriptorRefs>-->
+                <!--<archive>-->
+                    <!--<manifest>-->
+                        <!--<mainClass>SparkDemo</mainClass>-->
+                    <!--</manifest>-->
+                <!--</archive>-->
+            <!--</configuration>-->
+            <!--<executions>-->
+                <!--<execution>-->
+                    <!--<id>make-assembly</id>-->
+                    <!--<phase>package</phase>-->
+                    <!--<goals>-->
+                        <!--<goal>assembly</goal>-->
+                    <!--</goals>-->
+                <!--</execution>-->
+            <!--</executions>-->
+        <!--</plugin>-->
     </plugins>
     </build>
 

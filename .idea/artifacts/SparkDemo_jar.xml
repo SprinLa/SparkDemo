@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="SparkDemo:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/SparkDemo_jar</output-path>
+    <output-path>$PROJECT_DIR$/target/out/SparkDemo_jar</output-path>
     <root id="archive" name="SparkDemo.jar">
       <element id="module-output" name="SparkDemo" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/ning/compress-lzf/1.0.3/compress-lzf-1.0.3.jar" path-in-jar="/" />
