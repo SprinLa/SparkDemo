@@ -40,7 +40,7 @@
                         <!--<goal>java</goal>-->
                     <!--</goals>-->
                     <!--<configuration>-->
-                        <!--<mainClass>SparkDemo</mainClass>-->
+                        <!--<mainClass>SparkDemoLocal</mainClass>-->
                     <!--</configuration>-->
                 <!--</execution>-->
             <!--</executions>-->
@@ -55,7 +55,7 @@
                 <!--</descriptorRefs>-->
                 <!--<archive>-->
                     <!--<manifest>-->
-                        <!--<mainClass>SparkDemo</mainClass>-->
+                        <!--<mainClass>SparkDemoLocal</mainClass>-->
                     <!--</manifest>-->
                 <!--</archive>-->
             <!--</configuration>-->
