@@ -19,7 +19,7 @@ public class SparkDemoHDFS {
         JavaRDD<Integer> lineLengths =rddFile.map(s->s.length());//此时lineLengths也没有进行运算，因为map操作为懒执行。
         int totalLength = lineLengths.reduce((a,b)->a+b);
         //lineLengths.cache();//使用默认存储级别的快捷设置方法.默认StorageLevel.MEMORY_ONLY,将反序列化的对象存储到内存中.
-
+        System.out.println("====SparkDemoHDFS:totalLength="+totalLength);
         //<K,V>形式的RDD
         JavaPairRDD<String,Integer> pairs = rddFile.mapToPair(s->new Tuple2(s,1));//转换为<K,V>格式的RDD
         //pairs.foreach(a->{System.out.println(a);});
